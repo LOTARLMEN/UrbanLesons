@@ -1,7 +1,6 @@
 from fake_math import divide as fmd
 from  true_math import divide as tmd
 
-
 result1 = fmd(69, 3)
 result2 = fmd(3, 0)
 result3 = tmd(49, 7)

@@ -9,5 +9,4 @@ def cipher(first_field):
     else:
         return 'Вы ввели не правильное число!!!'
 
-
 print(cipher(int(input('Введите число от 3 до 20: '))))
