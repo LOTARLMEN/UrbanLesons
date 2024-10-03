@@ -30,7 +30,7 @@ class House():
     def __add__(self, value):
         if isinstance(value, int):
             self.number_of_floors += value
-            return self.number_of_floors
+            return self
 
     def __radd__(self, value):
         return self.__add__(value)
