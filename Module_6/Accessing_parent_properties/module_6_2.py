@@ -13,15 +13,19 @@ class Sedan(Vehicle):
 
     def get_model(self):
         return f"Модель: {self._Vehicle__model}"
+
     def get_horsepower(self):
         return f"Мощность двигателя: {self._Vehicle__engine_power}"
+
     def get_color(self):
         return f"Цвет: {self._Vehicle__color}"
+
     def print_info(self):
         print(f'{self.get_model()}\n'
               f'{self.get_horsepower()}\n'
               f'{self.get_color()}\n'
               f'Владелец: {self.owner}')
+
     def set_color(self, new_color):
         if new_color.lower() in [color.lower() for color in self._Vehicle__COLOR_VARIANTS]:
             self.__color = new_color
