@@ -1,0 +1,16 @@
+Неверный тип данных для объекта Runner. | ERROR | 2024-10-28 12:43:58,104
+Traceback (most recent call last):
+  File "C:\Users\VALERIY\PYTHON ОБУЧЕНИЕ\Urban training\Module_12\Unit-Tests\tests_12_4.py", line 32, in test_run
+    self.some_runner = Runner(1)
+                       ^^^^^^^^^
+  File "C:\Users\VALERIY\PYTHON ОБУЧЕНИЕ\Urban training\Module_12\Unit-Tests\rt_with_exceptions.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+Неверная скорость для Runner. | ERROR | 2024-10-28 12:43:58,105
+Traceback (most recent call last):
+  File "C:\Users\VALERIY\PYTHON ОБУЧЕНИЕ\Urban training\Module_12\Unit-Tests\tests_12_4.py", line 17, in test_walk
+    self.some_runner = Runner('Акакий', speed=(-5))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VALERIY\PYTHON ОБУЧЕНИЕ\Urban training\Module_12\Unit-Tests\rt_with_exceptions.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
